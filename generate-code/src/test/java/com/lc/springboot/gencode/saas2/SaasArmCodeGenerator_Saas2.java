@@ -30,8 +30,8 @@ public class SaasArmCodeGenerator_Saas2 extends AbstractSaasBaseGenCode {
                 "tenant_id"
         };
 
-        genCode.outputRootDir = "/Users/liangchao/tmp/qjd-saas/saas-biz/";
-        genCode.dtoOutputRootDir = "/Users/liangchao/tmp/qjd-saas/saas-api/saas-arm-api/";
+        genCode.outputRootDir = "/Users/gw/tmp/qjd-saas/saas-biz/";
+        genCode.dtoOutputRootDir = "/Users/gw/tmp/qjd-saas/saas-api/saas-arm-api/";
 
 
 //        genCode.outputRootDir = "/Users/liangchao/IdeaProjects/qjd/qjd-saas/saas-biz/";
