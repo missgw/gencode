@@ -8,7 +8,7 @@ import ${package.AddRequest}.${table.dtoUpdateName};
 import ${package.AddRequest}.${table.dtoDeleteRequestName};
 import ${package.DetailResponse}.${table.dtoDetailResponseName};
 import ${package.Entity}.${entity};
-import com.qjdchina.saas.common.web.MyPageInfo;
+import MyPageInfo;
 import org.springframework.data.domain.Pageable;
 
 /**

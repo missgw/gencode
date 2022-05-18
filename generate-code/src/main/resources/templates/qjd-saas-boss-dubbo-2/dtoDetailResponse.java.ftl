@@ -3,7 +3,7 @@ package ${package.DetailResponse};
 <#list table.importPackages as pkg>
     <#if pkg != "com.baomidou.mybatisplus.annotation.TableName"
     && pkg != "com.baomidou.mybatisplus.annotation.TableField">
-import com.qjdchina.saas.common.web.vo.BossBaseModel;
+import BossBaseModel;
     </#if>
 </#list>
 <#if swagger2>

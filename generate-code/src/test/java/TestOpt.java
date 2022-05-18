@@ -2,11 +2,7 @@ import org.junit.Test;
 
 import java.util.UUID;
 
-/**
- * @author liangc
- * @version V1.0
- * @date ${DATE}
- **/
+
 public class TestOpt {
 
     @Test

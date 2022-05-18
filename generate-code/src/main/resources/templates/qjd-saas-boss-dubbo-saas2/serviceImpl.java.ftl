@@ -14,7 +14,7 @@ import ${package.DetailResponse}.${table.dtoDetailResponseName};
 import ${package.Mapper}.${table.mapperName};
 import ${package.Entity}.${entity};
 import com.qjdchina.saas.common.web.BaseModelV2;
-import com.qjdchina.saas.common.web.MyPageInfo;
+import MyPageInfo;
 import com.qjdchina.saas.common.web.MyPageUtil;
 import com.qjdchina.saas.common.exception.error.BusinessErrorCode;
 import com.qjdchina.saas.common.exception.BusinessException;

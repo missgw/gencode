@@ -1,6 +1,6 @@
 package ${package.DeleteRequest};
 
-import com.qjdchina.saas.common.web.request.BaseRequest;
+import BaseRequest;
 <#if swagger2>
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

@@ -8,7 +8,7 @@ import ${package.Service}.${table.serviceImplName};
 import com.lc.springboot.common.api.RestBody;
 import com.lc.springboot.common.api.RestBody;
 import com.lc.springboot.common.api.RestBody;
-import com.qjdchina.saas.common.web.MyPageInfo;
+import MyPageInfo;
 import com.lc.springboot.common.auth.Authorize;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
