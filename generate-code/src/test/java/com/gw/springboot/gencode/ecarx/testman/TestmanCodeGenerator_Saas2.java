@@ -49,7 +49,7 @@ public class TestmanCodeGenerator_Saas2 extends AbstractSaasBaseGenCode {
 //                "sa_account_type_label_relation"
 //        };
 
-        genCode.tables = new String[]{"report_moban"};
+        genCode.tables = new String[]{"report_property"};
         genCode.genCode();
     }
 

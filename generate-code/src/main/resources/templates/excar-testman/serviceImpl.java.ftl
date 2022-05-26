@@ -115,11 +115,11 @@ public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.m
     /**
     * 根据${fieldComment}查询${table.comment!}结果集
     *
-    * @param param ${field.comment}
+    * @param param ${field.propertyName}
     * @return ${table.comment!}结果集
     */
     @Override
-    public List<${entity}> get${entity}By${field.propertyName?cap_first}s(Collection<String> ${field.propertyName}s, String orgId){
+    public List<${entity}> get${entity}By${field.propertyName?cap_first}s(Collection<String> ${field.propertyName}s){
         String errorDesc = "${fieldComment}不能为空";
 
         if (CollectionUtils.isEmpty(${field.propertyName}s)) {
@@ -132,12 +132,9 @@ public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.m
             }
         });
 
-        CheckValueUtil.checkOrgId(orgId);
 
         LambdaQueryWrapper<${entity}> lambdaQuery = Wrappers.<${entity}>lambdaQuery()
-            .in(${entity}::get${field.propertyName?cap_first}, ${field.propertyName}s)
-            .eq(${entity}::getOrgId, orgId);
-
+            .in(${entity}::get${field.propertyName?cap_first}, ${field.propertyName}s);
         return ${table.mapperName?uncap_first}.selectList(lambdaQuery);
     }
 
