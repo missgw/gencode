@@ -4,14 +4,15 @@ package com.gw.springboot.gencode.ecarx.testman;
 import com.gw.springboot.gencode.AbstractSaasBaseGenCode;
 
 /**
- * 授信
- *
- * @author gewei
- */
-public class TestmanCodeGenerator_Saas2 extends AbstractSaasBaseGenCode {
+  *@Description 跑测试平台任务
+  *@Author gambler
+  *@Date 2022/6/30 11:42 上午
+  *@Version 1.0
+**/
+public class TestmanCodeGenerator extends AbstractSaasBaseGenCode {
 
     public static void main(String[] args) {
-        AbstractSaasBaseGenCode genCode = new TestmanCodeGenerator_Saas2();
+        AbstractSaasBaseGenCode genCode = new TestmanCodeGenerator();
 
         genCode.projectName = "";
         genCode.rootUrlMapping = "v1";
@@ -49,7 +50,7 @@ public class TestmanCodeGenerator_Saas2 extends AbstractSaasBaseGenCode {
 //                "sa_account_type_label_relation"
 //        };
 
-        genCode.tables = new String[]{"report_property"};
+        genCode.tables = new String[]{"team_test"};
         genCode.genCode();
     }
 

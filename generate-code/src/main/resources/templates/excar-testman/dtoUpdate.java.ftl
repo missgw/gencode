@@ -1,6 +1,5 @@
 package ${package.AddRequest};
 
-import io.geekidea.springbootplus.framework.core.pagination.BasePageOrderParam;
 <#if swagger2>
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -52,7 +51,7 @@ import java.math.BigDecimal;
 <#if swagger2>
 @ApiModel(value="更新${table.comment!}请求对象")
 </#if>
-public class ${table.dtoUpdateName} extends BasePageOrderParam implements Serializable {
+public class ${table.dtoUpdateName} implements Serializable {
 
 <#if entitySerialVersionUID>
     private static final long serialVersionUID = 1L;

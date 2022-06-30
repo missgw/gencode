@@ -9,11 +9,11 @@ import ${package.DetailResponse}.${table.dtoDetailResponseName};
 import ${package.Service}.${table.serviceName};
 import io.geekidea.springbootplus.framework.common.api.ApiResult;
 import io.geekidea.springbootplus.framework.core.pagination.Paging;
+import org.springframework.beans.factory.annotation.Autowired;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import javax.annotation.Resource;
 
 <#assign tableA=table.xmlName?lower_case>
 
@@ -30,7 +30,7 @@ import javax.annotation.Resource;
 @RequestMapping("${controllerRootMapPath}${entity?lower_case}")
 public class ${table.controllerName} {
 
-    @Resource
+    @Autowired
     ${table.serviceName} ${table.serviceName?uncap_first};
    
 

@@ -29,7 +29,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Collection;
 import java.util.List;
 import org.apache.commons.collections.CollectionUtils;
-import com.qjdchina.saas.${projectName}.util.CheckValueUtil;
         <#break>
     </#if>
 </#list>
@@ -115,7 +114,7 @@ public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.m
     /**
     * 根据${fieldComment}查询${table.comment!}结果集
     *
-    * @param param ${field.propertyName}
+    * @param  ${field.propertyName}s
     * @return ${table.comment!}结果集
     */
     @Override

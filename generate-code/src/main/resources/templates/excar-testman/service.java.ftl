@@ -62,7 +62,7 @@ public interface ${table.serviceName} extends BaseService<${entity}>{
     /**
      * 根据${fieldComment}查询${table.comment!}结果集
      *
-     * @param param ${field.propertyName}
+     * @param ${field.propertyName}s
      * @return ${table.comment!}结果集
      */
     List<${entity}> get${entity}By${field.propertyName?cap_first}s(Collection<String> ${field.propertyName}s);

@@ -36,7 +36,6 @@ public class ${table.dtoDetailRequestName} extends BasePageOrderParam implements
 </#if>
 
     @ApiModelProperty(value = "${table.comment!}编号", example = "0", required = true)
-    @NotNull(message = "${table.comment!}编号不能为空")
     private Long ${table.entityName?uncap_first}Id;
 
 <#if !entityLombokModel>
